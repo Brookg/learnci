@@ -5,7 +5,7 @@
             // 在构造函数中加载model
             $this->load->model('news_model');
             // 加载其它
-            $this->load->helper('url_helper');
+            $this->load->helper('url');
         }
 
         public function index() {
