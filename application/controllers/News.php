@@ -4,8 +4,10 @@
             parent::__construct();
             // 在构造函数中加载model
             $this->load->model('news_model');
-            // 加载其它
+            // 加载url辅助函数
             $this->load->helper('url');
+            // 加载分析器类
+            $this->output->enable_profiler(TRUE);
         }
 
         public function index() {
